@@ -1,0 +1,97 @@
+.services {
+  padding: 2rem;
+  text-align: center;
+}
+
+.services h1 {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 2.5rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.card-image {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-text {
+  font-family: "Lato", Arial, sans-serif;
+  padding: 1rem;
+}
+
+.card-text h2 {
+  font-family: "Lato", Arial, sans-serif;
+  margin: 0.5rem 0;
+}
+
+.card-text p {
+  font-family: "Lato", Arial, sans-serif;
+  color: #666;
+}
+
+.contact_img {
+  min-height: 100px;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .services h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .services h1 {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 480px) {
+  .services h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .card-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .card-text p {
+    font-size: 1rem;
+  }
+}
